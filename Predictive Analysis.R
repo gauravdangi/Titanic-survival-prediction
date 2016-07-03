@@ -70,11 +70,6 @@ testing<-data.table(testing)
 sapply(training,class)
 sapply(testing,class)
 
-# selecting only Pclass, title and family size
-training<-training[,c(1,2)]
-View(training)
-
-
 #XXXXXXXXXXXXXXXXXXXXXXXX---Let's use Logistic regression first----XXXXXXXXXXXXXXXXXXXXXXX
 
 model1<-glm(Survived~.,data=training,family = binomial)

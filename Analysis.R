@@ -88,7 +88,7 @@ levels(train$Survived) <- c("Survived", "Died")
 
 #Now lets grep the name for better visualization
 
-
+# I have uploaded title_fun function 
 a<-NULL
 for(i in 1:nrow(train)){
   
